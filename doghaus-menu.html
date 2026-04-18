@@ -2,11 +2,30 @@
 <html lang="en" style="color-scheme: light only;">
 <head>
 <meta charset="UTF-8">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Doghaus Brewing Co. — Tap Menu</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:wght@300;400&display=swap" rel="stylesheet">
+<style>
+  html, body, div, section, main {
+    background-color: initial !important;
+    color: initial !important;
+  }
+  @media (prefers-color-scheme: dark) {
+    html { filter: none !important; }
+    #slide-brand, #slide-taplist, #slide-coming-soon {
+      background: #EDE9E0 !important;
+      color: #111111 !important;
+    }
+    #slide-spotlight {
+      background: #111111 !important;
+      color: #EDE9E0 !important;
+    }
+  }
+</style>
 <style>
   /* =============================================
      CONFIGURATION — Edit SHEET_CSV_URL below
@@ -589,7 +608,6 @@
     <div class="badge-label">TAP</div>
     <div class="badge-num" id="spot-tap"></div>
   </div>
-  <div class="spotlight-big-bg" id="spot-bg-text">GUNSLINGER</div>
 </div>
 
 <!-- ══ SLIDE 4: COMING SOON ══ -->
