@@ -54,7 +54,7 @@
   }
 
   * {
-    cursor: none !important;
+    cursor: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='1' height='1'/>") 0 0, none !important;
   }
 
   body {
@@ -438,7 +438,7 @@
   }
   .coming-header h2 {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 7vw;
+    font-size: 9vw;
     color: var(--red);
     line-height: 1;
     overflow: hidden;
@@ -455,7 +455,9 @@
   .coming-list {
     display: flex;
     flex-direction: column;
-    gap: 2.5vh;
+    gap: 0;
+    flex: 1;
+    justify-content: space-evenly;
   }
   .coming-item {
     display: flex;
@@ -472,14 +474,14 @@
   }
   .coming-item-name {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 4.5vw;
+    font-size: 6vw;
     color: var(--dark);
     line-height: 1;
     flex: 1;
   }
   .coming-item-style {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1.6vw;
+    font-size: 2vw;
     font-weight: 600;
     color: var(--red);
     text-transform: uppercase;
@@ -488,10 +490,10 @@
   }
   .coming-item-desc {
     font-family: 'Barlow', sans-serif;
-    font-size: 1.2vw;
+    font-size: 1.5vw;
     font-weight: 300;
     color: #666;
-    max-width: 30vw;
+    max-width: 35vw;
     text-align: right;
     line-height: 1.4;
   }
